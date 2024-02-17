@@ -12,7 +12,8 @@ from lib.helpers import check_that_these_are_equal
 
 # YOUR FUNCTION GOES BELOW THIS LINE
 
-
+def add_numbers(numA,numB):
+    return numA + numB
 
 # YOUR FUNCTION GOES ABOVE THIS LINE
 
