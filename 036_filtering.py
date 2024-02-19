@@ -37,8 +37,11 @@ print("Function: only_positive_numbers")
 
 # Return a new list with only the positive numbers
 def only_positive_numbers(numbers):
-  pass
-
+  result = []
+  for num in numbers:
+   if num > 0:
+     result.append(num)
+  return result
 check_that_these_are_equal(
   only_positive_numbers([-4, 4, -3, 3]), [4, 3])
 check_that_these_are_equal(

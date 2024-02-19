@@ -40,7 +40,6 @@ for letter in text:
     letter_counts[letter] = letter_counts[letter] + 1
 
 # Let's print out the dictionary to see what we've got:
-print(letter_counts)
 
 # If you're curious as to why we need to check if the letter
 # is in the dictionary, try uncommenting this code and see
@@ -67,7 +66,13 @@ print("Function: count_words_by_length")
 # Since there are two words of length 3, etc.
 
 def count_words_by_length(words):
-  pass
+  resultDictionary={}
+  for word in words:  
+    if len(word) not in resultDictionary:
+      resultDictionary[len(word)]=1
+    else:
+      resultDictionary[len(word)]+=1
+  return resultDictionary
 
 check_that_these_are_equal(
   count_words_by_length(["hat", "cat", "I", "bird"]),

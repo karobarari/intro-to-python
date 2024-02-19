@@ -40,6 +40,5 @@ print("  " + my_dictionary["List"])
 # print out the value below.
 
 print("A Dictionary is:")
-# ...
-
+print(my_dictionary)
 # Once you're done, move on to 038_dict_operations.py
